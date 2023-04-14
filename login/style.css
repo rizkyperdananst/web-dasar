@@ -1,0 +1,80 @@
+* {
+     box-sizing: border-box;
+}
+
+html, body {
+     margin: 0;
+     padding: 0;
+}
+
+.container {
+     width: 400px;
+     margin: 150px auto;
+}
+
+.card {
+     border: 1px solid grey;
+     box-shadow: 0 0 3px grey;
+     /* background-image: url(./img/darkOWL.jpeg); */
+     /* background-size: cover; */
+}
+
+.card .card-header h2 {
+     text-align: center;
+}
+
+.card .card-body .form-group input {
+     width: 94%;
+     margin: 10px;
+     padding: 10px;
+     border-radius: 5px;
+     border: 1px solid grey;
+}
+
+.card .card-body .form-group input {
+     outline: none;
+}
+
+.card .card-body .form-group input:not(:focus) {
+     border: 1px solid grey;
+}    
+
+.card .card-body .form-group input:focus:valid {
+     color: green;
+     border: 1px solid green;
+}
+
+.card .card-body .form-group input:focus:invalid {
+     color: red;
+     border: 1px solid red;
+}
+
+.card .card-body .form-group button {
+     border: none;
+     margin: 10px;
+     width: 94%;
+     padding: 8px;
+     background-color: #00ABCC;
+     border-radius: 5px;
+     letter-spacing: 5px;
+     font-size: 18px;
+     text-transform: uppercase;
+}
+
+.card .card-body .form-group button:hover {
+     background-color: #3282B8;
+     cursor: pointer;
+}
+
+.card .card-header {
+     text-align: center;
+}
+
+.card .card-header img {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     margin: 10px;
+     box-shadow: 0 0 3px grey;
+     border: 1px solid #3282B8;
+}

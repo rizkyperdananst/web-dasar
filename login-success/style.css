@@ -1,0 +1,97 @@
+* {
+     box-sizing: border-box;
+}
+
+html, body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+     width: 400px;
+     margin: 150px auto;
+}
+
+.container .card {
+     border: 1px solid grey;
+     border-radius: 5px;
+     box-shadow: 0px 0px 5px grey;
+}
+
+.card .card-header {
+     text-align: center;
+}
+
+.card .card-header img {
+     width: 100px;
+     border-radius: 50%;
+     margin-top: 20px;
+}
+
+.card .card-header h2 {
+     text-align: center;
+     font-size: 20px;
+}
+
+.card .card-body {
+     margin: 10px 10px;
+}
+
+.card .card-body .form-control input {
+     width: 96%;
+     margin: 8px 8px;
+     padding: 10px;
+     border-radius: 5px;
+     border: 1px solid grey;
+     caret-color: blue;
+}
+
+.card .card-body .form-control input {
+     outline: none;
+}
+
+.card .card-body .form-control input:not(:focus) {
+     border: 1px solid grey;
+}
+
+.card .card-body .form-control input:focus:valid {
+     border: 1px solid green;
+     color: green;
+}
+
+.card .card-body .form-control input:focus:invalid {
+     color: red;
+     border: 1px solid red;
+     animation: shake 300ms;
+}
+
+@keyframes shake {
+     25% {
+          transform: translateX(4px);
+     }
+     50% {
+          transform: translateX(-4px);
+     }
+     75% {
+          transform: translateX(4px);
+     }
+}
+
+.card .card-body .form-control button {
+     width: 96%;
+     margin: 8px 8px;
+     padding: 8px;
+     border-radius: 5px;
+     background-color: #00A8CC;
+     border: none;
+     box-shadow: 0 0 3px grey;
+     letter-spacing: 5px;
+     font-weight: bold;
+     margin-bottom: 20px;
+}
+
+.card .card-body .form-control button:hover {
+     background-color: #0C7B93;
+     cursor: pointer;
+}
