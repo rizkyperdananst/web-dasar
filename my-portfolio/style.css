@@ -1,0 +1,68 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     background-color: aqua;
+     padding: 10px;
+}
+
+nav .menu a {
+     text-decoration: none;
+     padding: 0 5px;
+     color: black;
+}
+
+.home {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+     grid-template-areas: 
+          'home-left home-right'
+          'home-left home-right';
+}
+
+.home .home-left {
+     grid-area: home-left;
+     padding: 100px;
+}
+
+.home .home-right {
+     grid-area: home-right;
+}
+
+.home .home-right img {
+     width: 400px;
+}
+
+.home .home-left h2 {
+     font-size: 40px;
+}
+
+.home .home-left p {
+     margin: 10px 0;
+}
+
+.home .home-left button {
+     padding: 10px 15px;
+     background-color: aqua;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 1s;
+}
+
+.home .home-left button:hover {
+     opacity: 0.7;
+     background-color: salmon;
+}
